@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.red[900],
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -19,6 +19,10 @@ class MyApp extends StatelessWidget {
               CircleAvatar(
                 radius: 55.0,
                 backgroundImage: AssetImage('images/bruh.jpeg'),
+              ),
+
+              SizedBox(
+                height: 20.0,
               ),
 
               Text(
@@ -37,7 +41,7 @@ class MyApp extends StatelessWidget {
                   fontSize: 20.0,
                   fontFamily: 'OpenSans',
                   letterSpacing: 1.5,
-                  color: Colors.teal[200],
+                  color: Colors.red[100],
                 ),
               ),
 
@@ -45,7 +49,8 @@ class MyApp extends StatelessWidget {
                 height: 50.0,
                 width: 100.0,
                 child: Divider(
-                  color: Colors.teal[200],
+                  color: Colors.red[200],
+                  thickness: 1.5,
                 ),
               ),
 
@@ -55,7 +60,7 @@ class MyApp extends StatelessWidget {
 
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.teal,
+                    color: Colors.red[900],
                   ),
 
                   title: Text(
@@ -76,7 +81,7 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.mail,
-                    color: Colors.teal,
+                    color: Colors.red[900],
                   ),
 
                   title: Text(
